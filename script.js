@@ -12,8 +12,16 @@ for(let i = 0; i < 256; i++) {
     div.classList.add("box")
     div.style.backgroundColor = getRandomColor();
     div.textContent = i + 1;
+    div.style.opacity = "0";
     
+    div.addEventListener('mouseenter', (e) => {
+        div.style.backgroundColor = getRandomColor();
 
+        if (div.style.opacity <= 1) {
+             div.style.opacity = String(parseFloat(div.style.opacity) + 0.1);
+        }
+       
+    });
     
     container.appendChild(div);
 }
