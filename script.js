@@ -12,5 +12,8 @@ for(let i = 0; i < 256; i++) {
     div.classList.add("box")
     div.style.backgroundColor = getRandomColor();
     div.textContent = i + 1;
+    
+
+    
     container.appendChild(div);
 }

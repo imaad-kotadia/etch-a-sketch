@@ -8,4 +8,7 @@
 .box {
     height: 50px;
     width: 50px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;     /* Centers vertically */
 }
